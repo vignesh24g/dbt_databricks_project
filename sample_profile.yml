@@ -1,0 +1,10 @@
+dbt_databricks_project:
+  target: dev
+  outputs:
+    dev:
+      type: databricks
+      catalog: workspace
+      schema: default
+      host: https://dbc-193fd39e-1bea.cloud.databricks.com
+      http_path: /sql/1.0/warehouses/4e16950781c42030
+      token: "ur token"

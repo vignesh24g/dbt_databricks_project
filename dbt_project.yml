@@ -1,0 +1,13 @@
+name: dbt_databricks_project
+version: 1.0.0
+profile: dbt_databricks_project
+config-version: 2
+
+flags:
+  use_concurrent_microbatch: true
+  use_managed_iceberg: true
+
+models:
+  dbt_databricks_project:
+    +materialized: view
+    +table_format: delta
